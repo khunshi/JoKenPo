@@ -34,10 +34,12 @@ function Jogar(choice) {
 }
 
 function playerWin() {
-  playerPoints++
+  playerPoints++;
+  document.getElementById("placar").innerText = playerPoints + " x " + botPoints;
+
 }
 
 function botWin() {
   botPoints++
+  document.getElementById("placar").innerText = playerPoints + " x " + botPoints;
 }
-
