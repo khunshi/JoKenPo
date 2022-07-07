@@ -1,0 +1,49 @@
+.placar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 5px;
+}
+
+img {
+  height: 8em;
+  border-radius: 4em;
+  margin: 10px;
+  
+}
+
+.imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns {
+  font-size: 1em;
+  height: 3em;
+  width: 5.5em;
+  margin: 10px;
+}
+
+.jkpbtn {
+  font-size: 1.2em;
+  height: 3em;
+  width: 16em;
+  margin: 10px;
+}
+
+.escolhas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jogar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -4,7 +4,7 @@ var choices = ["pedra", "papel", "tesoura"];
 var playerPoints = 0;
 var botPoints = 0;
 
-function Jogar(choice) {
+const Jogar = (choice) => {
   let playerChoice = choice;
   let randomPicker = Math.floor(Math.random() * 3);
   let botChoice = choices[randomPicker];
@@ -26,7 +26,7 @@ function Jogar(choice) {
       botWin();
     } else if (playerChoice == "tesoura" && botChoice == "papel") {
       console.log("vitoria");
-      playerWin()
+      playerWin();
     } else {
       console.log("empate");
     }
