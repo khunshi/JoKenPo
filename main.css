@@ -12,7 +12,7 @@ img {
   height: 8em;
   border-radius: 4em;
   margin: 10px;
-  background-color: hotpink;
+  background-color: #38F2C1;
   
 }
 
@@ -28,6 +28,11 @@ img {
   height: 3em;
   width: 5.5em;
   margin: 10px;
+  color: white;
+  background-color: #29CC7D;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .jkpbtn {
@@ -35,6 +40,11 @@ img {
   height: 3em;
   width: 16em;
   margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #29CC7D;
+  color: white;
+  font-weight: bold;
 }
 
 .escolhas {
@@ -57,4 +67,29 @@ img {
 
 #resultado {
   text-align: center;
+  height: 3em;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+}
+
+#resultado::placeholder {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  
+}
+
+body {
+  background-color: #21181C;
+  color: white;
+}
+
+.btns:active, .jkpbtn:active {
+  background-color: #21AB68;
+  transition: 120ms;
+}
+
+.app {
+  margin: 3em 0 3em 0;
 }
