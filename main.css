@@ -12,6 +12,7 @@ img {
   height: 8em;
   border-radius: 4em;
   margin: 10px;
+  background-color: hotpink;
   
 }
 
@@ -46,4 +47,14 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#resultado {
+  text-align: center;
 }
