@@ -5,6 +5,9 @@ var playerPoints = 0;
 var botPoints = 0;
 var tesoura;
 
+// PLACAR CHANGES//
+
+
 function playerWin() {
   playerPoints++;
   document.getElementById("placar").innerText = playerPoints + " x " + botPoints;
@@ -16,6 +19,10 @@ function botWin() {
   document.getElementById("placar").innerText = playerPoints + " x " + botPoints;
   document.getElementById("resultado").placeholder = "DERROTA"
 }
+
+
+// ONCLICK FUNCTIONS TO SELECT CHOICE//
+
 
 const Pedra = () => {
   playerChoice = "pedra";
@@ -40,7 +47,11 @@ const Jogar = () => {
   if (playerChoice == "papel" || playerChoice == "pedra" || playerChoice == "tesoura") {
     let randomPicker = Math.floor(Math.random() * 3);
     let botChoice = choices[randomPicker];
-
+    
+    
+  // INNER IMG CHOICE ON SCREEN//
+  
+  
     if (botChoice === "papel") {
       document.getElementById("imgb").src = "imgs/papel.png"
     } else if (botChoice === "pedra")
@@ -49,19 +60,19 @@ const Jogar = () => {
     } else if (botChoice === "tesoura") {
       document.getElementById("imgb").src = "imgs/tesoura.png"
     }
-
-    if (playerChoice == "pedra" && botChoice == "papel") {
+    
+    
+  // MATCH RESULT //
+  
+  
+    if (playerChoice == "pedra" && botChoice == "papel" || playerChoice == "papel" && botChoice == "tesoura" || playerChoice == "tesoura" && botChoice == "pedra" ) {
+      
       botWin();
-    } else if (playerChoice == "pedra" && botChoice == "tesoura") {
+      
+    } else if (playerChoice == "pedra" && botChoice == "tesoura" || playerChoice == "papel" && botChoice == "pedra" || playerChoice == "tesoura" && botChoice == "papel") {
+      
       playerWin();
-    } else if (playerChoice == "papel" && botChoice == "pedra") {
-      playerWin();
-    } else if (playerChoice == "papel" && botChoice == "tesoura") {
-      botWin();
-    } else if (playerChoice == "tesoura" && botChoice == "pedra") {
-      botWin();
-    } else if (playerChoice == "tesoura" && botChoice == "papel") {
-      playerWin();
+      
     } else {
       document.getElementById("resultado").placeholder = "EMPATE";
     }
